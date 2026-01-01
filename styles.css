@@ -18,6 +18,22 @@ body {
     "Segoe UI", Roboto, Ubuntu, sans-serif;
 }
 
+/* Back link styling */
+.back-link {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: var(--muted);
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
 .wrapper {
   height: 100%;
   display: flex;
@@ -52,3 +68,12 @@ footer p {
   font-size: 0.9rem;
   color: var(--muted);
 }
+
+/* Mobile responsiveness for back link */
+@media (max-width: 640px) {
+  .back-link {
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 0.95rem;
+  }
+
